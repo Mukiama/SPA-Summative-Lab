@@ -1,0 +1,22 @@
+{
+    "words": [
+    {
+      "id": 1,
+      "word": "apple",
+      "meaning": "A round fruit with red or green skin.",
+      "example": "I ate an apple for breakfast."
+    },
+    {
+      "id": 2,
+      "word": "computer",
+      "meaning": "An electronic device used to process data.",
+      "example": "I use my computer to code."
+    },
+    {
+      "id": 3,
+      "word": "ocean",
+      "meaning": "A large body of salt water.",
+      "example": "The ocean is very deep."
+    }
+    ]
+}
