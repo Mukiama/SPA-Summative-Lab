@@ -10,11 +10,13 @@
     <div class="app">
 
     <header class="topbar">
-        <h1>Wordly Dictionary</h1>
+        <h1>Wordly</h1>
         <form id="search-form">
             <label for="wordInput">Search for a word:</label>
             <input type="text" id="wordInput" placeholder="e.g. apple">
             <button type="submit">Search</button>
+            <button type="button" id="play-audio">Play Pronunciation</button>
+            <div id="result"></div>
         </form>
     </header>
 
@@ -29,11 +31,11 @@
         <h2>Results:</h2>
         <div id="word-details">
             <h3 id="word">---</h3>
-            <p><strong>Meaning:</strong></strong></p>
+            <!-- <p><strong>Meaning:</strong></strong></p> -->
             <p id="meaning">meaning of the word</p>
-            <p><strong>Example:</strong></strong></p>
+            <!-- <p><strong>Example:</strong></strong></p> -->
             <p id="example">example sentence</p>
-            <button id="play-audio">Play Pronunciation</button>
+            
         </div>
     </section>
     </div>
