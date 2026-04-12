@@ -1,0 +1,42 @@
+/* Core layout  */
+#body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.app {
+    height: 100vh;
+    display: flex; 
+    flex-direction: column;
+}
+/* Top Search bar  */
+.topbar {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    background: #f5f5f5;
+}
+.topbar input {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+}
+/* Main split layout */
+.main {
+    flex: 1;
+    display: flex;
+    overflow: hidden; 
+}
+/* Left panel (word list) */
+.left-panel {
+    width: 30%;
+    border-right: 1px solid #ccc;
+    overflow-y: auto; 
+    background: #fafafa;
+    padding: 10px;
+}
+/* Right Panel (definitions) */
+.right-panel {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}

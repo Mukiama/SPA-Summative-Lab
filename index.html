@@ -4,8 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
+    <div class="app">
+
+    <header class="topbar">
+        <h1>Wordly Dictionary</h1>
+        <form id="search-form">
+            <label for="wordInput">Search for a word:</label>
+            <input type="text" id="wordInput" placeholder="e.g. apple">
+            <button type="submit">Search</button>
+        </form>
+    </header>
+
+    <div class="main">
+        <aside class="left-panel">
+            <h3>Word List/Suggestions</h3>
+            <ul id="word-list"></ul>
+        </aside>
+   
+
+    <section class="right-panel">
+        <h2>Results:</h2>
+        <div id="word-details">
+            <h3 id="word">---</h3>
+            <p><strong>Meaning:</strong></strong></p>
+            <p id="meaning">meaning of the word</p>
+            <p><strong>Example:</strong></strong></p>
+            <p id="example">example sentence</p>
+            <button id="play-audio">Play Pronunciation</button>
+        </div>
+    </section>
+    </div>
+    </div>
+    <script src="js/index.js"></script>
 
 </body>
 </html>
