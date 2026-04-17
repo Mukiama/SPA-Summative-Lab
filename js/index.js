@@ -22,10 +22,13 @@ function displayResult(data) {
     const audioBtn = document.querySelector("#play-audio");
 
     if (audio) {
+        audioBtn.disabled =false
         audioBtn.onclick = () => {
              new Audio(audio).play();
             
         };
+    } else {audioBtn.onclick = null;
+    audioBtn.disabled = true;
     }
 }
 document.querySelector("#search-form").addEventListener("submit", (e) => {
