@@ -11,10 +11,21 @@ fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`)
 
 
 function displayResult(data) {
+    const wordError = document.querySelector("#word");
+    const meaningError = document.querySelector("#meaning");
+    
+    if(!Array.isArray(data)){
+        wordError.textContent = "Word not found";
+        meaningError.textContent = "Try again";
+        return;
+    }
     const word = data[0].word;
     const meaning = data[0].meanings[0].definitions[0].definition;
     const example = data[0].meanings[0].definitions[0].example;
     const audio = data[0].phonetics[0]?.audio;
+
+    wordError.textContent = word;
+    meaningError.textContent = meaning;
 
     document.querySelector("#word").textContent = word;
     document.querySelector("#meaning").textContent = meaning;
